@@ -1,0 +1,32 @@
+body {
+  letter-spacing: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.parrafo-dinamico {
+  font-size: 20pt;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+h4 {
+  justify-content: center;
+}
+
+
+main img {
+  width: 500px;
+  height: auto;
+}
+
+button {
+  width: 20%;
+}

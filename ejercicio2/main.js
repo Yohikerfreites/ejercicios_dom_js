@@ -62,4 +62,29 @@ for (const app of apps) {
 
 // 2.7 Elimina todos los nodos que tengan la clase .fn-remove-me
 
+const eliminar = document.querySelectorAll(".fn-remove-me");
+console.log(eliminar);
+for (const eliminado of eliminar) {
+  eliminado.remove();
+}
 
+// 2.8 Inserta una p con el texto 'Voy en medio!' entre los dos div. Recuerda que no solo puedes insertar elementos con .appendChild.
+
+const parrafoMedio = document.createElement("p");
+parrafoMedio.textContent = 'Voy en medio!';
+
+const div1 = document.querySelector("div");
+
+div1.insertAdjacentElement("afterend", parrafoMedio);
+
+
+// 2.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase  .fn-insert-here
+
+const insertar = document.querySelectorAll(".fn-insert-here");
+console.log(insertar);
+
+insertar.forEach(insertado => {
+  const parrafoInterno = document.createElement("p");
+  parrafoInterno.textContent = 'Voy dentro!';
+  insertado.appendChild(parrafoInterno);
+});
